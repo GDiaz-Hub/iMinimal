@@ -1,0 +1,30 @@
+main {
+    #grid-90{
+        width: 90%;
+    }
+
+    #card-container {
+        h5 {
+            font-size: 1em;
+            font-family: neue-haas-grotesk-text, sans-serif;
+            font-weight: 500;
+        }
+        i {
+            position: absolute;
+            bottom: 7.5em;
+            right: 0.7em;
+            cursor: pointer;
+            opacity: 50%;
+        }
+        i:hover {
+            opacity: 100%;
+            color: #ff0000;
+        }
+
+        .card-body{
+            .card-text{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
