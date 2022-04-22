@@ -8,9 +8,9 @@
 
     <meta name="description" content="iMinimal, tienda de ropa online con envio gratuito a todo el pais,llevate un 20% de descuento en tu primer compra">
     <meta name="keywords" content="ropa, tienda, online, argentina, tandil, descuentos, mujer, hombre">
-    
+
     <title>iMinimal - Tienda de Ropa</title>
-    
+
     <!--Estilo CSS & Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -25,18 +25,14 @@
 
 <body>
     <header>
-        <nav id="main-nav" class="navbar navbar-expand-lg navbar-light">
-            <div id="nav-items" class="container-fluid">
+        <nav class="main-nav navbar navbar-expand-lg navbar-light">
+            <div class="nav-items container-fluid">
                 <a class="navbar-brand" href="index.html">iMinimal</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Activar Navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <form class="d-flex me-2">
-                            <button class="btn fa-solid fa-magnifying-glass" type="submit"></button>
-                            <input class="form-control me-2" type="search" aria-label="Search">
-                        </form>
                         <li class="nav-item me-2">
                             <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                         </li>
@@ -58,13 +54,19 @@
             </div>
         </nav>
     </header>
-    <!--NAVEGACION SECUNDARIA-->
-    <nav id="page-nav" class="container-fluid" aria-label="breadcrumb">
+    <div class="main-search">
+        <form class="d-flex">
+            <button class="btn fa-solid fa-magnifying-glass" type="submit"></button>
+            <input class="form-control" type="search" aria-label="Search" placeholder="Buscar">
+        </form>
+    </div>
+    <!--NAVEGACION SECUNDARIA
+    <nav class="page-nav container-fluid" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
             <li class="breadcrumb-item active" aria-current="page">Novedades</li>
         </ol>
-    </nav>
+    </nav> -->
     <!--TITULO SECCION-->
     <div class="container-fluid page-section" aria-label="Novedades">
         <h1>Novedades</h1>
@@ -72,150 +74,522 @@
     <!--CONTENIDO-->
     <main class="animate__animated animate__fadeIn">
 
-        <div id="grid-90" class="container-fluid">
+        <div class="p-30 container-fluid">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3">
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Rem Lineas.jpg" class="card-img-top img-fluid" alt="Remera Navy Mujer"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Remera Navy</h5>
-                            <p class="card-subtitle">$1340</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Rem Lineas.jpg" class="img-fluid" alt="Remera Navy Mujer"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Remera Navy</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1340</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Remera Vincit.jpg" class="card-img-top img-fluid" alt="Remera Vincit Hombre"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Remera Vincit</h5>
-                            <p class="card-subtitle">$1250</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Remera Vincit.jpg" class="img-fluid" alt="Remera Vincit Hombre"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Remera Vincint</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1250</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Vest.MinColor.jpg" class="card-img-top img-fluid" alt="Vestido Meryl Mujer"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Vestido Meryl</h5>
-                            <p class="card-subtitle">$1700</p>
-                            <p class="card-text text-muted">iMinimal</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Vest.MinColor.jpg" class="img-fluid" alt="Vestido Meryl Mujer"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Vestido Meryl</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1700</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Remera Relaxed.jpg" class="card-img-top img-fluid" alt="Remera Relaxed Hombre"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Remera Relaxed</h5>
-                            <p class="card-subtitle">$1250</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Remera Relaxed.jpg" class="img-fluid" alt="Remera Relaxed Hombre"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Remera Relaxed</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1250</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Campera Puffy.jpg" class="card-img-top img-fluid" alt="Campera Puffy Hombre"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Campera Puffy</h5>
-                            <p class="card-subtitle">$2100</p>
-                            <p class="card-text text-muted">iMinimal</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Campera Puffy.jpg" class="img-fluid" alt="Campera Puffy Hombre"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Campera Puffy</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$2100</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Pant Slim Fit.jpg" class="card-img-top img-fluid" alt="Pantalon Slim Fit Mujer"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Legginsgs Black</h5>
-                            <p class="card-subtitle">$1400</p>
-                            <p class="card-text text-muted">iMinimal</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Pant Slim Fit.jpg" class="img-fluid" alt="Pantalon Slim Fit Mujer"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Legginsgs Black</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1400</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Sobrecamisa Square.jpg" class="card-img-top img-fluid" alt="Sobrecamisa Square Hombre"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Sobrecamisa Square</h5>
-                            <p class="card-subtitle">$1550</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Sobrecamisa Square.jpg" class="img-fluid" alt="Sobrecamisa Square Hombre"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Sobrecamisa Square</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1550</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Pant Cargo.jpg" class="card-img-top img-fluid" alt="Pantalon Cargo Mujer"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Pantalon Cargo</h5>
-                            <p class="card-subtitle">$1600</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Pant Cargo.jpg" class="img-fluid" alt="Pantalon Cargo Mujer"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Pantalon Cargo</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1600</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Camp Bomber.jpg" class="card-img-top img-fluid" alt="Cazadora Bomber Mujer"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Cazadora Bomber</h5>
-                            <p class="card-subtitle">$2000</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Camp Bomber.jpg" class="img-fluid" alt="Cazadora Bomber Mujer"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Cazadora Bomber</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$2000</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Slim Jeans.jpg" class="card-img-top img-fluid" alt="Jeans Slim Hombre"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Jeans Slim</h5>
-                            <p class="card-subtitle">$1700</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Slim Jeans.jpg" class="img-fluid" alt="Jeans Slim Hombre"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Jeans Slim</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1700</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Vest.MinColor.jpg" class="card-img-top img-fluid" alt="Vestido Body Mujer"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Vestido Body</h5>
-                            <p class="card-subtitle">$2000</p>
-                            <p class="card-text text-muted">iMinimal</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/mujer/Vest.MinColor.jpg" class="img-fluid" alt="Vestido Body Mujer"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Vestido Body</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$2000</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
 
                 <div class="col">
-                    <div id="card-container" class="card">
-                        <i class="fa-solid fa-heart like-position"></i>
-                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Remera Pale.jpg" class="card-img-top img-fluid" alt="Remera Pale Hombre"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Remera Pale</h5>
-                            <p class="card-subtitle">$1250</p>
-                            <p class="card-text text-muted">H&M</p>
-                        </div>
+                    <div class="card-box card">
+                        <a href="paginas/remeraNavy.html"><img src="multimedia/hombre/Remera Pale.jpg" class="img-fluid" alt="Remera Pale Hombre"></a>
+                        <div class="p-05 card-body">
+                            <div>
+                                <p class="item-name">Remera Pale</p>
+                            </div>
+                            <div class="flex-info">
+                                <p class="item-price">$1250</p>
+                                <div class="flex-color">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-brown" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-green" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-red" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class=" color-blue" "=""></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="color-orange" "=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>
             </div>

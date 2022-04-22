@@ -4,34 +4,27 @@ footer {
     background-color: $main-color;
     border: $border;
     padding: 1em;
-    margin-top: 1em;
+    margin-top: 4em;
     font-size: 0.75em;
-
-
     h6 {
         font-size: 1.4em;
         font-weight: 600;
     }
-
     p {
         font-weight: 400;
         font-family: $neue-text;
     }
-
     #nav-footer {
         padding: 0;
-
         a {
             font-weight: 400;
             font-family: $neue-text;
             text-decoration: none;
             color: $secondary-color;
         }
-
-        a:hover{
+        a:hover {
             text-decoration: underline;
         }
-        
     }
 }
 
