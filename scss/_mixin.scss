@@ -1,18 +1,15 @@
-
-@mixin color-circle{
+@mixin color-circle {
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 100%;
+    border: 1px solid #a3a3a3;
 }
 
-$color-item: ("brown":$brown-color, "green":$green-color, "red":$red-color, "blue":$blue-color, "orange":$orange-color);
-
+$color-item: ("white":$white-color, "brown":$brown-color, "grey":$grey-color, "yellow":$yellow-color, "purple":$purple-color, "blue":$blue-color, "soft-blue":$soft-blue, "dark-blue":$dark-blue, "beige":$beige-color, "black":$black-color);
 @each $name,
 $color in $color-item {
-
     .color-#{$name} {
         @include color-circle();
         background-color: $color;
     }
-
 }
