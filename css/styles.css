@@ -350,14 +350,48 @@ body {
   #product-view {
     margin: 0; } }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  padding: 1em;
+  margin-top: 4em;
+  font-size: 0.75em; }
+  footer h6 {
+    font-size: 1.4em;
+    font-weight: 600; }
+  footer p {
+    font-weight: 400;
+    font-family: neue-haas-grotesk-text, sans-serif; }
+  footer .nav-footer {
+    padding: 0; }
+    footer .nav-footer a {
+      font-weight: 400;
+      font-family: neue-haas-grotesk-text, sans-serif;
+      text-decoration: none;
+      color: #212121; }
+    footer .nav-footer a:hover {
+      text-decoration: underline; }
+
+@media (max-width: 992px) {
+  footer {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; } }
+
 .contact-section {
+  margin-bottom: 1.5em;
+  background: #ffffff;
   text-align: center;
-  border-bottom: 1px solid #e7e7e7; }
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0; }
   .contact-section h1 {
     font-size: 24px;
-    margin: 50px 0;
+    padding: 40px 0;
     font-family: neue-haas-grotesk-text, sans-serif;
-    color: #2c2c2c; }
+    color: #2c2c2c;
+    margin: 0; }
 
 h3 {
   font-size: 1.2rem;
@@ -390,33 +424,3 @@ section button {
   .map-responsive {
     width: auto;
     height: 615px; } }
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #ffffff;
-  border: 1px solid #e7e7e7;
-  padding: 1em;
-  margin-top: 4em;
-  font-size: 0.75em; }
-  footer h6 {
-    font-size: 1.4em;
-    font-weight: 600; }
-  footer p {
-    font-weight: 400;
-    font-family: neue-haas-grotesk-text, sans-serif; }
-  footer #nav-footer {
-    padding: 0; }
-    footer #nav-footer a {
-      font-weight: 400;
-      font-family: neue-haas-grotesk-text, sans-serif;
-      text-decoration: none;
-      color: #212121; }
-    footer #nav-footer a:hover {
-      text-decoration: underline; }
-
-@media (max-width: 992px) {
-  footer {
-    text-align: center;
-    flex-direction: column;
-    justify-content: center; } }
