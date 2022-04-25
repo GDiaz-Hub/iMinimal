@@ -236,96 +236,96 @@ body {
       width: 100%;
       height: 100%; }
 
-.product-view {
+#product-view {
   display: flex;
   justify-content: center;
   margin: 1rem; }
-  .product-view section {
+  #product-view section {
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     grid-template-areas: "img info";
     justify-items: stretch;
     border: 1px solid #e7e7e7;
     background-color: #ffffff; }
-    .product-view section .product-img {
+    #product-view section .product-img {
       display: contents;
       grid-area: img; }
-      .product-view section .product-img a {
+      #product-view section .product-img a {
         display: contents; }
-      .product-view section .product-img img {
+      #product-view section .product-img img {
         width: 100%;
         height: auto; }
-    .product-view section .product-info {
+    #product-view section .product-info {
       display: flex;
       grid-area: info;
       padding: 1em 2em;
       flex-direction: column;
       gap: 1em; }
-      .product-view section .product-info .title {
+      #product-view section .product-info .title {
         display: flex;
         justify-content: center; }
-        .product-view section .product-info .title h1 {
+        #product-view section .product-info .title h1 {
           font-size: 1.5rem;
           font-family: neue-haas-grotesk-text, sans-serif;
           font-weight: 600; }
-      .product-view section .product-info .price {
+      #product-view section .product-info .price {
         margin: 2rem 0; }
-        .product-view section .product-info .price span {
+        #product-view section .product-info .price span {
           font-size: 1.3rem;
           font-weight: 500; }
-        .product-view section .product-info .price p {
+        #product-view section .product-info .price p {
           font-size: 0.8rem;
           color: #585858; }
-      .product-view section .product-info .color {
+      #product-view section .product-info .color {
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 0.5rem; }
-        .product-view section .product-info .color span {
+        #product-view section .product-info .color span {
           font-size: 16px;
           font-weight: 600;
           margin-bottom: 0.5rem; }
-        .product-view section .product-info .color ul {
+        #product-view section .product-info .color ul {
           padding: 0;
           display: flex;
           flex-wrap: wrap;
           margin: 0.5rem;
           list-style: none; }
-        .product-view section .product-info .color li {
+        #product-view section .product-info .color li {
           position: relative;
           width: 1.2rem;
           height: 1.2rem;
           margin: 0.3rem;
           cursor: pointer; }
-        .product-view section .product-info .color a {
+        #product-view section .product-info .color a {
           display: block;
           width: 100%;
           height: 100%; }
-      .product-view section .product-info form div span {
+      #product-view section .product-info form div span {
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 0.5rem; }
-      .product-view section .product-info form div ul {
+      #product-view section .product-info form div ul {
         padding: 0;
         display: flex;
         list-style: none;
         text-align: center;
         gap: 0.4em;
         flex-wrap: wrap; }
-        .product-view section .product-info form div ul li {
+        #product-view section .product-info form div ul li {
           display: inline-block; }
-          .product-view section .product-info form div ul li input {
+          #product-view section .product-info form div ul li input {
             display: none; }
-          .product-view section .product-info form div ul li label {
+          #product-view section .product-info form div ul li label {
             display: inline-block;
             text-align: center;
             padding: 0.5rem 1rem;
             border: 1px solid;
             cursor: pointer;
             font-size: 0.9rem; }
-        .product-view section .product-info form div ul li:hover {
+        #product-view section .product-info form div ul li:hover {
           background-color: #212121;
           color: #ffffff; }
-      .product-view section .product-info form button {
+      #product-view section .product-info form button {
         width: 100%;
         padding: 14px 28px;
         border: none;
@@ -335,23 +335,23 @@ body {
         font-size: 14px;
         text-transform: uppercase;
         margin-top: 1em; }
-      .product-view section .product-info .pay-info {
+      #product-view section .product-info .pay-info {
         margin-top: 1rem; }
-        .product-view section .product-info .pay-info span {
+        #product-view section .product-info .pay-info span {
           font-size: 16px;
           font-weight: 600;
           margin-bottom: 0.5rem; }
-        .product-view section .product-info .pay-info p {
+        #product-view section .product-info .pay-info p {
           font-size: 0.75rem;
           font-weight: 500;
           margin-bottom: 1rem; }
-        .product-view section .product-info .pay-info a {
+        #product-view section .product-info .pay-info a {
           font-size: 0.7em;
           font-family: neue-haas-grotesk-text, sans-serif;
           color: #212121; }
 
 @media (max-width: 1250px) {
-  .product-view section {
+  #product-view section {
     grid-template-columns: auto;
     grid-template-areas: "img" "info"; }
   .product-info {
@@ -361,7 +361,7 @@ body {
       margin: 0.2rem; } }
 
 @media (max-width: 400px) {
-  .product-view {
+  #product-view {
     margin: 0; } }
 
 footer {

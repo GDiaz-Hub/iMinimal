@@ -1,4 +1,4 @@
-.product-view {
+#product-view {
     display: flex;
     justify-content: center;
     margin: 1rem;
@@ -144,7 +144,7 @@
 }
 
 @media (max-width: 1250px) {
-    .product-view {
+    #product-view {
         section {
             grid-template-columns: auto;
             grid-template-areas: "img" "info";
@@ -166,7 +166,7 @@
 }
 
 @media (max-width: 400px) {
-    .product-view {
+    #product-view {
         margin: 0;
     }
 }
