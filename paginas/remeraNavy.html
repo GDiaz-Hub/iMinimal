@@ -24,20 +24,15 @@
 </head>
 
 <body>
-    <!--HEADER & MAIN NAV-->
     <header>
         <nav class="main-nav navbar navbar-expand-lg navbar-light">
             <div class="nav-items container-fluid">
-                <a class="navbar-brand" href="#">iMinimal</a>
+                <a class="navbar-brand" href="../index.html">iMinimal</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Activar Navegación">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <form class="d-flex me-2">
-                            <button class="btn fa-solid fa-magnifying-glass" type="submit"></button>
-                            <input class="form-control me-2" type="search" aria-label="Search">
-                        </form>
                         <li class="nav-item me-2">
                             <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
@@ -53,62 +48,47 @@
                         <li class="nav-item me-2">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-bag-shopping me-5"></i>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!--NAVEGACION SECUNDARIA-->
+    <div class="main-search">
+        <form class="d-flex">
+            <button class="btn fa-solid fa-magnifying-glass" type="submit"></button>
+            <input class="form-control" type="search" aria-label="Search" placeholder="Buscar">
+        </form>
+    </div>
+    <!--NAVEGACION SECUNDARIA
     <nav class="page-nav container-fluid" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="mujer.html">Mujer</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Remera Navy</li>
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Novedades</li>
         </ol>
-    </nav>
+    </nav> -->
     <!--CONTENIDO-->
-    <main id="product-view" class="animate__animated animate__fadeIn">
+    <main class="animate__animated animate__fadeIn product-view ">
         <section class="product-container">
-            <div id="product-img" class="product-img">
+            <div class="product-img">
                 <a href="../paginas/adams2.html">
                     <img class="img-size" src="../multimedia/mujer/Rem Lineas2.jpg" alt="Remera Navy Mujer">
                 </a>
             </div>
-            <div id="product-info">
-                <div id="title">
+            <div class="product-info">
+                <div class="title">
                     <h1 class="m-0">Remera Navy</h1>
                 </div>
-                <div id="price">
+                <div class="price">
                     <span>$1460</span>
                     <p>Impuestos incluidos</p>
                 </div>
-                <div id="color">
-                    <span>Elegir Color</span>
-                    <ul class="select-color">
-                        <li class="color-item">
-                            <a class="color-url" href="">
-								<div class="color-brown""></div>
-                            </a>
-                        </li>
-                        <li class="color-item">
-                            <a class="color-url" href="">
-								<div class="color-green""></div>
-                            </a>
-                        </li>
-                        <li class="color-item">
-                            <a class="color-url" href="">
-								<div class="color-red""></div>
-                            </a>
-                        </li>
-                        <li class="color-item">
-                            <a class="color-url" href="">
-								<div class="color-blue""></div>
-                            </a>
-                        </li>
-                        <li class="color-item">
-                            <a class="color-url" href="">
-								<div class="color-orange""></div>
+                <div class="color">
+                    <span>Color unico</span>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div data-toggle="tooltip" data-placement="bottom" title="Blanco y Negro" class="color-black-white"=""></div>
                             </a>
                         </li>
                     </ul>
@@ -144,14 +124,14 @@
                         <button class="buy-button">Agregar al carrito</button>
                     </div>
                 </form>
-                <div id="pay-info">
-                    <span class="payment">Formas de pago</span>
-                    <p class="payment-p">
-                        <strong>12</strong> cuotas sin interes de 168,83
+                <div class="pay-info">
+                    <span>Formas de pago</span>
+                    <p>
+                        <bold>12</bold> cuotas sin interes de 121,66.
                         <br>
-                        <strong>12% de descuento</strong> pagando con deposito / Transf. Bancaria o retiro por el local (pago efectivo).
+                        <bold>12% de descuento</bold> pagando con deposito / Transf. Bancaria o retiro por el local (pago efectivo).
                     </p>
-                    <a class="payment-a" href="">Ver medios de pago</a>
+                    <a href="">Ver medios de pago</a>
                 </div>
             </div>
         </section>
@@ -160,10 +140,10 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col">
-                <ul id="nav-footer">
+                <ul class="nav-footer">
                     <h6>INFORMACIÓN</h6>
                     <li><a href="">Sobre iMinimal</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="paginas/contacto.html">Contacto</a></li>
                     <li><a href="">Términos y condiciones</a></li>
                     <li><a href="">Información de envio</a></li>
                     <li><a href="">Información del pago</a></li>
@@ -180,12 +160,14 @@
                     <p>Pongase en contacto con nosotros en customservice@minimal.com</p>
                 </div>
                 <div>
-                    <strong>Acerca de iMinimal</strong>
-                    <br> iMinimal
-                    <br> San Martín 658
-                    <br> 7000 Tandil
-                    <br> Argentina
-                    <br>
+                    <p>
+                        <bold>Acerca de iMinimal</bold>
+                        <br> iMinimal
+                        <br> San Martín 658
+                        <br> 7000 Tandil
+                        <br> Argentina
+                        <br>
+                    </p>
                 </div>
             </div>
         </div>

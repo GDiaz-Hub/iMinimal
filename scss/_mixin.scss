@@ -5,11 +5,20 @@
     border: 1px solid #a3a3a3;
 }
 
-$color-item: ("white":$white-color, "brown":$brown-color, "grey":$grey-color, "yellow":$yellow-color, "purple":$purple-color, "blue":$blue-color, "soft-blue":$soft-blue, "dark-blue":$dark-blue, "beige":$beige-color, "black":$black-color);
+$color-item: ("white":$white-color, "brown":$brown-color, "grey":$grey-color, "purple":$purple-color, "blue":$blue-color, "soft-blue":$soft-blue, "dark-blue":$dark-blue, "beige":$beige-color, "black":$black-color);
 @each $name,
 $color in $color-item {
     .color-#{$name} {
         @include color-circle();
         background-color: $color;
+    }
+}
+
+$duo-colorItem: ("black-white":$black-white, "beige-white":$beige-white, "beige-brown":$beige-brown);
+@each $name,
+$color in $duo-colorItem {
+    .color-#{$name} {
+        @include color-circle();
+        background-image: $color;
     }
 }
