@@ -138,6 +138,10 @@ body {
   justify-content: flex-end; }
   #navbarNavDropdown .navbar-nav {
     align-items: center; }
+    #navbarNavDropdown .navbar-nav li {
+      margin-right: 0.5rem; }
+    #navbarNavDropdown .navbar-nav i {
+      margin-right: 3rem; }
   #navbarNavDropdown .btn {
     color: #212121;
     background-color: #ffffff;
@@ -195,6 +199,14 @@ body {
     .page-nav ol li a {
       text-decoration: none;
       color: #000000; }
+
+@media (max-width: 991px) {
+  #navbarNavDropdown .navbar-nav li {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem; }
+  #navbarNavDropdown .navbar-nav i {
+    margin-right: 0rem;
+    margin-bottom: 1rem; } }
 
 .p-30 {
   padding: 0 30px; }
