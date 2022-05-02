@@ -2,9 +2,9 @@
     .product-container {
         background-color: $main-color;
         display: flex;
-        padding: 1em 1em;
+        padding: 2em 1em;
         justify-content: center;
-        gap: 1em;
+        gap: 1.5em;
         .product-img {
             flex: 1;
             max-width: 520px;
@@ -81,14 +81,13 @@
                         flex-wrap: wrap;
                         margin-bottom: 1em;
                         li {
-                            display: inline-block;
+                            margin: 0;
                             input {
                                 display: none;
                             }
                             label {
-                                display: inline-block;
                                 text-align: center;
-                                padding: 0.5rem 1rem;
+                                padding: 0.5rem 0.7rem;
                                 border: 1px solid;
                                 cursor: pointer;
                                 font-size: 0.9rem;
@@ -130,5 +129,15 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 706px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .select-size {
+        justify-content: center;
     }
 }
