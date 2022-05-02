@@ -1,55 +1,45 @@
 #product-view {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
     section {
-        display: grid;
-        grid-template-columns: 0.7fr 1fr;
-        grid-template-areas: "img info";
-        justify-items: stretch;
-        border: $border;
         background-color: $main-color;
+        display: flex;
+        padding: 1em 1em;
+        justify-content: center;
+        gap: 1em;
         .product-img {
-            display: contents;
-            grid-area: img;
-            a {
-                display: contents;
-            }
+            flex: 1;
+            max-width: 520px;
             img {
                 width: 100%;
                 height: auto;
             }
         }
         .product-info {
-            display: flex;
-            grid-area: info;
-            padding: 1em 2em;
-            flex-direction: column;
-            gap: 1em;
+            flex: 1;
+            max-width: 420px;
             .title {
-                display: flex;
-                justify-content: center;
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     font-family: $neue-text;
-                    font-weight: 600;
+                    font-weight: 500;
                 }
             }
             .price {
-                margin: 2rem 0;
+                margin: 1em 0;
                 span {
                     font-size: 1.3rem;
                     font-weight: 500;
                 }
                 p {
-                    font-size: 0.8rem;
-                    color: $soft-grey;
+                    font-size: 0.7rem;
+                    color: #757575;
+                    font-weight: 500;
+                    margin: 0;
                 }
             }
             .color {
                 font-size: 16px;
                 font-weight: 600;
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.5em 0em;
                 span {
                     font-size: 16px;
                     font-weight: 600;
@@ -89,6 +79,7 @@
                         text-align: center;
                         gap: 0.4em;
                         flex-wrap: wrap;
+                        margin-bottom: 1em;
                         li {
                             display: inline-block;
                             input {
@@ -118,20 +109,19 @@
                     font-family: $neue-text;
                     font-size: 14px;
                     text-transform: uppercase;
-                    margin-top: 1em;
+                    margin: auto;
                 }
             }
             .pay-info {
-                margin-top: 1rem;
+                margin-top: 1em;
                 span {
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: 600;
-                    margin-bottom: 0.5rem;
                 }
                 p {
-                    font-size: 0.75rem;
+                    font-size: 14px;
                     font-weight: 500;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1em;
                 }
                 a {
                     font-size: 0.7em;
@@ -147,7 +137,7 @@
     #product-view {
         section {
             grid-template-columns: auto;
-            grid-template-areas: "img" "info";
+            grid-template-areas: "img""info";
         }
     }
     .product-info {
