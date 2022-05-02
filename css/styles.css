@@ -248,64 +248,64 @@ body {
       width: 100%;
       height: 100%; }
 
-#product-view section {
+#product-view .product-container {
   background-color: #ffffff;
   display: flex;
   padding: 1em 1em;
   justify-content: center;
   gap: 1em; }
-  #product-view section .product-img {
+  #product-view .product-container .product-img {
     flex: 1;
     max-width: 520px; }
-    #product-view section .product-img img {
+    #product-view .product-container .product-img img {
       width: 100%;
       height: auto; }
-  #product-view section .product-info {
+  #product-view .product-container .product-info {
     flex: 1;
     max-width: 420px; }
-    #product-view section .product-info .title h1 {
+    #product-view .product-container .product-info .title h1 {
       font-size: 1.4rem;
       font-family: neue-haas-grotesk-text, sans-serif;
       font-weight: 500; }
-    #product-view section .product-info .price {
+    #product-view .product-container .product-info .price {
       margin: 1em 0; }
-      #product-view section .product-info .price span {
+      #product-view .product-container .product-info .price span {
         font-size: 1.3rem;
         font-weight: 500; }
-      #product-view section .product-info .price p {
+      #product-view .product-container .product-info .price p {
         font-size: 0.7rem;
         color: #757575;
         font-weight: 500;
         margin: 0; }
-    #product-view section .product-info .color {
+    #product-view .product-container .product-info .color {
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 0.5em 0em; }
-      #product-view section .product-info .color span {
+      #product-view .product-container .product-info .color span {
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 0.5rem; }
-      #product-view section .product-info .color ul {
+      #product-view .product-container .product-info .color ul {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
         margin: 0.5rem;
         list-style: none; }
-      #product-view section .product-info .color li {
+      #product-view .product-container .product-info .color li {
         position: relative;
         width: 1.2rem;
         height: 1.2rem;
         margin: 0.3rem;
         cursor: pointer; }
-      #product-view section .product-info .color a {
+      #product-view .product-container .product-info .color a {
         display: block;
         width: 100%;
         height: 100%; }
-    #product-view section .product-info form div span {
+    #product-view .product-container .product-info form div span {
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 0.5rem; }
-    #product-view section .product-info form div ul {
+    #product-view .product-container .product-info form div ul {
       padding: 0;
       display: flex;
       list-style: none;
@@ -313,21 +313,21 @@ body {
       gap: 0.4em;
       flex-wrap: wrap;
       margin-bottom: 1em; }
-      #product-view section .product-info form div ul li {
+      #product-view .product-container .product-info form div ul li {
         display: inline-block; }
-        #product-view section .product-info form div ul li input {
+        #product-view .product-container .product-info form div ul li input {
           display: none; }
-        #product-view section .product-info form div ul li label {
+        #product-view .product-container .product-info form div ul li label {
           display: inline-block;
           text-align: center;
           padding: 0.5rem 1rem;
           border: 1px solid;
           cursor: pointer;
           font-size: 0.9rem; }
-      #product-view section .product-info form div ul li:hover {
+      #product-view .product-container .product-info form div ul li:hover {
         background-color: #212121;
         color: #ffffff; }
-    #product-view section .product-info form button {
+    #product-view .product-container .product-info form button {
       width: 100%;
       padding: 14px 28px;
       border: none;
@@ -337,16 +337,16 @@ body {
       font-size: 14px;
       text-transform: uppercase;
       margin: auto; }
-    #product-view section .product-info .pay-info {
+    #product-view .product-container .product-info .pay-info {
       margin-top: 1em; }
-      #product-view section .product-info .pay-info span {
+      #product-view .product-container .product-info .pay-info span {
         font-size: 14px;
         font-weight: 600; }
-      #product-view section .product-info .pay-info p {
+      #product-view .product-container .product-info .pay-info p {
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 1em; }
-      #product-view section .product-info .pay-info a {
+      #product-view .product-container .product-info .pay-info a {
         font-size: 0.7em;
         font-family: neue-haas-grotesk-text, sans-serif;
         color: #212121; }
