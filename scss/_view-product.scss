@@ -132,25 +132,3 @@
         }
     }
 }
-
-@media (max-width: 1250px) {
-    .product-info {
-        padding: 1rem;
-        gap: 0;
-        form {
-            div {
-                ul {
-                    li {
-                        margin: 0.2rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    #product-view {
-        margin: 0;
-    }
-}
